@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.mainContainer {
+    display: flex;
+    /* makes it a flexbox containter that will adjust size flexibly */
+    align-items: center;
+    /* centers everything, without it extra wide buttons */
+    flex-direction: column; 
+    /* brings everything into vertical position,
+    without it and align-items center extra tall buttons  */
+    padding: 3rem 1rem;
+
+    justify-content: center;
+    height: 100vh;
+    /* these two together centers it in the middle of the page */
+
+    width: 50rem;
+    background-color: #1a1e69;
+    color: white;
+
+    box-sizing: border-box;
+    /* padding and border are now included in the width and height */
+
+    /* margin: 0 auto;
+    padding: 60px;
+    text-align: center; */
+}
+
+.generatePasswordBtn {
+    margin: 30px;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: aqua;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+   
+}
+
+h3 {
+ margin: 2rem 0;
+ font-weight: 400;
+ font-size: 1 rem;
+
+}
+
+h1 > font {
+    color:aqua;
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid #486890;
+    margin: 2rem 0;
+}
+
+.passwordContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    margin: 1rem 0;
+    justify-content: space-inbetween;
+}
+
+.passwordField{
+   width: 50%;
+   height: 4rem;
+   background-color:#383d7a;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 1.5rem;
+   cursor: copy; 
+}
